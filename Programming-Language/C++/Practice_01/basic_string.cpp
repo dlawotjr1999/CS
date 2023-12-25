@@ -31,14 +31,14 @@ struct my_char_traits : public std::char_traits<char> {
 	}
 };
 
-/*int main() {
+int main() {
 	std::basic_string<char, my_char_traits> my_s1 = "1a";
 	std::basic_string<char, my_char_traits> my_s2 = "a1";
 
-	std::cout << "¼ıÀÚÀÇ ¿ì¼±¼øÀ§°¡ ´õ ³·Àº ¹®ÀÚ¿­ : " << std::boolalpha << (my_s1 < my_s2) << std::endl;
+	std::cout << "ìˆ«ìì˜ ìš°ì„ ìˆœìœ„ê°€ ë” ë‚®ì€ ë¬¸ìì—´ : " << std::boolalpha << (my_s1 < my_s2) << std::endl;
 
 	std::string s1 = "1a";
 	std::string s2 = "a1";
 
-	std::cout << "ÀÏ¹İ ¹®ÀÚ¿­ : " << std::boolalpha << (s1 < s2) << std::endl;
-}*/
+	std::cout << "ì¼ë°˜ ë¬¸ìì—´ : " << std::boolalpha << (s1 < s2) << std::endl;
+}
