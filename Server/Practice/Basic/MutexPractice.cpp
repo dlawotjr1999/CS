@@ -19,6 +19,7 @@ int main() {
 	int counter = 0;
 	std::mutex m;
 
+	// 쓰레드는 기본적으로 call-by-value이기 때문에 레퍼런스 파라미터를 직접 전달하려면 std::ref로 감싸 전달해야 함
 	std::vector<std::thread> workers;
 	for (int i = 0; i < 4; i++) {
 		workers.emplace_back(std::thread(worker, std::ref(counter), std::ref(m)));
